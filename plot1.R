@@ -32,14 +32,8 @@ hist(
     power$Global_active_power,
     col = "red",
     main = "Global Active Power",
-    xlab = "Global Active Power (kilowatts)",
-    xlim = c(0, 6),
-    ylim = c(0, 1200),
-    breaks = 12,
-    axes = FALSE
+    xlab = "Global Active Power (kilowatts)"
 )
-axis(side = 1, at = seq(0, 6, 2))
-axis(side = 2, at = seq(0, 1200, 200))
 
 # Close the graphics device
 dev.off()
